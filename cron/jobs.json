@@ -1,0 +1,51 @@
+{
+  "hermes_version": "snapshot-2026-05-06",
+  "active_jobs": [
+    {
+      "id": "ab4e7cc3-7bc6-4274-ba12-5dfcf5b8189b",
+      "name": "workspace_diff_backup",
+      "schedule": "0 21 * * *",
+      "display": "Daily 21:00 Asia/Hong_Kong",
+      "deliver": "local",
+      "status": "active",
+      "note": "Markdown diff/check job — commits and pushes only if meaningful changes"
+    },
+    {
+      "id": "d742bfa251f5",
+      "name": "macro_collect",
+      "schedule": "50 7,16 * * *",
+      "display": "07:50 & 16:50 daily",
+      "workdir": "/home/claw/git/trend/macro_radar",
+      "command": "cd /home/claw/git/trend && PYTHONPATH=/home/claw/git/trend python macro_radar/main.py collect all --source tavily",
+      "last_status": "ok"
+    },
+    {
+      "id": "b3b9d6513d42",
+      "name": "macro_morning_brief",
+      "schedule": "0 0 * * *",
+      "display": "00:00 daily",
+      "workdir": "/home/claw/git/trend/macro_radar",
+      "command": "cd /home/claw/git/trend && PYTHONPATH=/home/claw/git/trend python macro_radar/main.py analyze --push",
+      "last_status": "error",
+      "last_error": "Unknown provider 'minimaxi-cn' (typo)"
+    },
+    {
+      "id": "47a266faa1b3",
+      "name": "macro_evening_brief",
+      "schedule": "0 9 * * *",
+      "display": "09:00 daily",
+      "workdir": "/home/claw/git/trend/macro_radar",
+      "command": "cd /home/claw/git/trend && PYTHONPATH=/home/claw/git/trend python macro_radar/main.py analyze --push",
+      "last_status": "ok"
+    },
+    {
+      "id": "50a8419760a0",
+      "name": "macro_weekly_report",
+      "schedule": "0 10 * * 1",
+      "display": "10:00 every Monday",
+      "workdir": "/home/claw/git/trend/macro_radar",
+      "command": "cd /home/claw/git/trend && PYTHONPATH=/home/claw/git/trend python macro_radar/main.py analyze --push",
+      "last_status": null
+    }
+  ]
+}
