@@ -1,40 +1,43 @@
-# Growth Log — 2026-05-06 19:51 UTC
+# Growth Log — 2026-05-06 20:12 UTC
 
-## + Files Added
+## Skills Snapshot (92 total)
 
-- README.md
-- configs/config.yaml.redacted
-- cron/jobs.json
-- memory/memory.md
-- memory/user-profile.md
-- scripts/hermes_backup.sh
-- skills/brainstorming/SKILL.md
-- skills/brainstorming/references/spec-document-reviewer-prompt.md
-- skills/brainstorming/references/visual-companion.md
-- skills/defuddle/SKILL.md
-- skills/filesystem-context/SKILL.md
-- skills/planning-with-files/SKILL.md
+All skill SKILL.md files backed up from ~/.hermes/skills/:
 
-## Skills Summary
-
-- brainstorming: installed
-- defuddle: installed
-- filesystem-context: installed
-- planning-with-files: installed
-- requesting-code-review: installed (pre-existing)
-- systematic-debugging: installed (pre-existing)
-- test-driven-development: installed (pre-existing)
-- writing-plans: installed (pre-existing)
+- airtable, apple-notes, apple-reminders, architecture-diagram, arxiv
+- ascii-art, ascii-video, audiocraft, axolotl
+- baoyu-comic, baoyu-infographic, blogwatcher, brainstorming
+- codebase-inspection, codex, comfyui, creative-ideation
+- debugging-hermes-tui-commands, defuddle, design-md, dogfood
+- dspy, excalidraw, filesystem-context, findmy
+- gif-search, github-auth, github-code-review, github-issues
+- github-pr-workflow, github-repo-management, godmode
+- google-workspace, heartmula, hermes-agent, hermes-agent-skill-authoring
+- himalaya, hk-markets, huggingface-hub, humanizer
+- imessage, jupyter-live-kernel, kanban-orchestrator, kanban-worker
+- linear, llama-cpp, llm-wiki, lm-evaluation-harness
+- manim-video, maps, minecraft-modpack-server, nano-pdf
+- native-mcp, node-inspect-debugger, notion, obliteratus
+- obsidian, ocr-and-documents, opencode, openhue
+- outlines, p5js, pixel-art, plan, planning-with-files
+- pokemon-player, polymarket, popular-web-designs, powerpoint
+- pretext, python-debugpy, requesting-code-review
+- research-paper-writing, segment-anything, sketch, songsee
+- songwriting-and-ai-music, spike, spotify, subagent-driven-development
+- systematic-debugging, test-driven-development, touchdesigner-mcp
+- trl-fine-tuning, unsloth, vllm, webhook-subscriptions
+- weights-and-biases, writing-plans, xurl, youtube-content, yuanbao
 
 ## Cron Jobs
 
 - macro_collect: 50 7,16 * * * | last: ok
-- macro_morning_brief: 0 0 * * * | last: error (provider typo)
+- macro_morning_brief: 0 0 * * * | last: error (provider typo: minimaxi-cn)
 - macro_evening_brief: 0 9 * * * | last: ok
 - macro_weekly_report: 0 10 * * 1 | last: never
-- workspace_diff_backup: 0 21 * * * | last: active (new)
+- hermes_weekly_backup: 0 22 * * 0 | last: never (new — first run 2026-05-10)
 
 ## Memory
 
-- memory.md: first snapshot
-- user-profile.md: first snapshot
+- Full memory snapshot: 12 entries, 60% used (1,333/2,200 chars)
+- User profile: Cheecai, Asia/Hong_Kong, concise, practical
+- GitHub auth: cheecai, token scopes: read:org, repo, workflow
